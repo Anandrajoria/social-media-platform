@@ -2,7 +2,7 @@ import "./rightbar.css";
 function Rightbar() {
   return (
     <>
-      <div>rightbar</div>
+      <div className='rightBar'>rightbar</div>
     </>
   );
 }
