@@ -15,6 +15,26 @@ function Share() {
                         <PermMediaIcon className='shareIcon'/>
                         <span className='shareOptionText'>photo or vodeo</span>
                     </div>
+
+                    <div className="shareOption">
+                        <PermMediaIcon className='shareIcon'/>
+                        <span className='shareOptionText'>photo or vodeo</span>
+                    </div>
+
+                    <div className="shareOption">
+                        <PermMediaIcon className='shareIcon'/>
+                        <span className='shareOptionText'>photo or vodeo</span>
+                    </div>
+
+                    <div className="shareOption">
+                        <PermMediaIcon className='shareIcon'/>
+                        <span className='shareOptionText'>photo or vodeo</span>
+                    </div>
+
+                    <div className="shareOption">
+                        <PermMediaIcon className='shareIcon'/>
+                        <span className='shareOptionText'>photo or vodeo</span>
+                    </div>
                 </div>
             </div>
         </div>
