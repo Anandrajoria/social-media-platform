@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
 }
-.birthdayImg{
+.BirthdayImg{
     width: 40px;
     height: 40px;
     mix-blend-mode: color-burn;
@@ -18,9 +18,48 @@
     font-weight: 300;
     font-size: 15px;
 }
-.rightBarImg{
+.rightBarAd{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 38px;
     object-fit: contain;
-    margin: 30px;
+    padding: 30px;
+}
+.rightBarTitle{
+    margin-bottom: 20px;
+}
+.rightBarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.rightBarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rightBarProfileImgContainer{
+    margin-right: 10px;
+    position: relative;
+}
+.rightBarProfileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rightBarOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    border: 2px solid #fff;
+}
+.rightBarUserName{
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
