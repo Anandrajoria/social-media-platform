@@ -8,6 +8,8 @@ import HelpIcon from "@mui/icons-material/Help";
 import WorkIcon from "@mui/icons-material/Work";
 import EventIcon from "@mui/icons-material/Event";
 import SchoolIcon from "@mui/icons-material/School";
+import {Users} from '../../DummyData'
+import CloseFriend from "../closeFriend/CloseFriend";
 function Sidebar() {
   return (
     <div className="sideBar">
@@ -53,86 +55,13 @@ function Sidebar() {
         <button className="sideBarButton">show More</button>
         <hr className="sideBarHr" />
         <ul className="sideBarFriendList">
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/2.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Anand</span>
-          </li>
 
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/3.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Emma stone</span>
-          </li>
+        
+          {Users.map(u=>{
+            return <CloseFriend key={u.id} user={u} />
+          })}
 
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/4.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Siya</span>
-          </li>
-
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/5.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Shubhi</span>
-          </li>
-
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/6.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Jiraya</span>
-          </li>
-
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/7.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Devid</span>
-          </li>
-
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/8.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Alita</span>
-          </li>
-
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/9.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Scarllet</span>
-          </li>
-
-          <li className="sideBarFriend">
-            <img
-              src="/accets/Profile_picture/10.jpg"
-              alt=""
-              className="sideBarFriendImg"
-            />
-            <span className="sideBarFriendName">Emma</span>
-          </li>
+          
         </ul>
       </div>
     </div>
