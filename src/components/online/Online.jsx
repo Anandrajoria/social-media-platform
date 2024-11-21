@@ -1,17 +1,17 @@
 import './online.css'
-function Online({users}) {
+function Online({user}) {
   return (
     <>
       <li className="rightBarFriend">
         <div className="rightBarProfileImgContainer">
           <img
             className="rightBarProfileImg"
-            src="/accets/profile_picture/4.jpg"
+            src={user.profilePicture}
             alt=""
           />
           <span className="rightBarOnline"></span>
         </div>
-        <span className="rightBarUserName">margret</span>
+        <span className="rightBarUserName">{user.Username}</span>
       </li>
     </>
   );
