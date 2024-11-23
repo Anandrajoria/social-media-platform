@@ -7,7 +7,9 @@ const rootElement = document.getElementById("root");
 // Create a root
 const root = ReactDOM.createRoot(rootElement);
 
+// routing 
 import { BrowserRouter } from "react-router-dom";
+
 // Render the app
 root.render(
   <>

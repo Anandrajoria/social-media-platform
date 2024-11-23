@@ -11,34 +11,34 @@
 .topbarLeft {
   flex: 3; /* flex: 3; is shorthand for the flex-grow, flex-shrink, and flex-basis properties. */
 }
-.logo{
-    font-size: 24px;
-    margin-left: 20px;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
 }
 .topbarCenter {
   flex: 5;
 }
-.searchbar{
-    width: 100%;
-    height: 30px;
-    background-color: #fff;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
 }
-.searchIcon{
-    font-size: 20px !important;  
-    margin-left: 10px;
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
 }
-.SearchInput{
-    border: none;
-    width: 70%;
-    &:focus{
-        outline: none;
-    }
+.SearchInput {
+  border: none;
+  width: 70%;
+  &:focus {
+    outline: none;
+  }
 }
 .topbarRight {
   flex: 4;
@@ -47,38 +47,79 @@
   justify-content: space-around;
   color: #fff;
 }
-.topbarlink{
-    margin-right: 10px;
-    font-size: 14px;
-    cursor: pointer;
+.topbarlink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
 }
-.topbarIcons{
-    display: flex;
+.topbarIcons {
+  display: flex;
 }
-.topbarIconItem{
-    margin-right: 15px;
-    cursor: pointer;
-    position: relative;
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
 }
 
-.topbarIconBadge{
-    width: 15px;
-    height: 15px;
-    background-color: red;
-    border-radius: 50%;
-    color: #fff;
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
 }
-.topbarImg{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* drop down */
+
+/* Dropdown Menu */
+.profileSection {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+}
+
+.dropdownMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdownMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.dropdownMenu ul li:hover {
+  background-color: #6776ea;
+  border-radius: 5px;
 }

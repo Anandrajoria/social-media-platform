@@ -6,7 +6,7 @@ import Rightbar from "../../components/rightbar/Rightbar";
 function Profile() {
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <div className="profile">
         <Sidebar />
         <div className="profileRight">
