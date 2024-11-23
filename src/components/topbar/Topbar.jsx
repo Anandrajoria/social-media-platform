@@ -35,7 +35,7 @@ function Topbar() {
       {/* Right Section */}
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarlink">Homepage</span>
+          <span className="topbarlink"><Link className="topBarlinkHome" to="/">Homepage</Link></span>
           <span className="topbarlink">Timeline</span>
         </div>
         <div className="topbarIcons">
@@ -64,10 +64,7 @@ function Topbar() {
           {dropdownVisible && (
             <div className="dropdownMenu">
               <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <hr />
+                
                 <li>
                   <Link to="/profile">Profile</Link>
                 </li>
